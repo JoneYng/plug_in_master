@@ -2,7 +2,7 @@ package com.yunqixinxi.main.contract;
 
 import com.yunqi.product.core.base.vp.inter.IPresenter;
 import com.yunqi.product.core.base.vp.inter.IView;
-import com.yunqi.product.core.bean.home.TestRankingBean;
+import com.yunqi.product.core.bean.home.AncientPoetry;
 
 /**
  * @Created by TOME .
@@ -13,11 +13,10 @@ import com.yunqi.product.core.bean.home.TestRankingBean;
 public interface HomeContract {
 
     interface View extends IView{
-        void showHomeTestData(TestRankingBean.ObjBean data);
+        void showHomeTestData(AncientPoetry data);
     }
 
     interface Presenter extends IPresenter<View>{
-        void getHomeListData();
         void getTestData();
     }
 }

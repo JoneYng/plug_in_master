@@ -1,12 +1,13 @@
 package com.yunqi.product.core.base.vp.observer;
 
-import com.yunqi.product.core.net.HttpHelper;
-import com.yunqi.product.core.net.common_callback.INetCallback;
 import com.yunqi.product.core.api.ApiService;
 import com.yunqi.product.core.base.bean.BaseObj;
 import com.yunqi.product.core.base.vp.inter.IView;
+import com.yunqi.product.core.net.HttpHelper;
+import com.yunqi.product.core.net.common_callback.INetCallback;
 import com.yunqi.product.core.util.L;
 import com.yunqi.product.core.util.RxUtils;
+
 import io.reactivex.Observable;
 
 /**
@@ -41,7 +42,11 @@ public class ModelService{
                                         public void onNext(BaseObj<T> result) {
                                             L.d("获取message", ":" + result.getMessage());
                                             if (BaseObj.SUCCESS.equals(result.getCode())) {
-                                                callback.onSuccess(result.getData());
+                                                if(result.getData()!=null){
+                                                    callback.onSuccess(result.getData());
+                                                }else{
+                                                    callback.onSuccess(result.getResult());
+                                                }
                                             } else {
                                                 mView.showRequestError(result.getMessage(), result.getCode());
                                             }

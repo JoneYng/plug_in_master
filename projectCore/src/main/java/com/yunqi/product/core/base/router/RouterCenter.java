@@ -11,48 +11,6 @@ import com.alibaba.android.arouter.launcher.ARouter;
  */
 public class RouterCenter {
 
-    /**
-     * 获取主页面
-     */
-    public static Fragment toMallHome() {
-        Fragment fragment = (Fragment) ARouter.getInstance().build(RouterPath.MALL_HOME).navigation();
-        if (fragment == null) {
-            fragment = new Fragment();
-        }
-        return fragment;
-    }
-    /**
-     * 获取商品页面
-     */
-    public static Fragment toMallGoods() {
-        Fragment fragment = (Fragment) ARouter.getInstance().build(RouterPath.MALL_GOODS).navigation();
-        if (fragment == null) {
-            fragment = new Fragment();
-        }
-        return fragment;
-    }
-    /**
-     * 获取购物车页面
-     */
-    public static Fragment toShopCart() {
-        Fragment fragment = (Fragment) ARouter.getInstance().build(RouterPath.MALL_SHOP_CART).navigation();
-        if (fragment == null) {
-            fragment = new Fragment();
-        }
-        return fragment;
-    }
-    /**
-     * 获取个人中心页面
-     */
-    public static Fragment toMallSelf() {
-        Fragment fragment = (Fragment) ARouter.getInstance().build(RouterPath.MALL_SELF).navigation();
-        if (fragment == null) {
-            fragment = new Fragment();
-        }
-        return fragment;
-    }
-
-
     public static Activity toMain() {
         Activity fragment = (Activity) ARouter.getInstance().build(RouterPath.MAIN).navigation();
         if (fragment == null) {

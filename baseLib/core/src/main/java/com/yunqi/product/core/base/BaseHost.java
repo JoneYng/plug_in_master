@@ -16,17 +16,17 @@ public class BaseHost {
     /**
      * 正式服务器baseUrl
      */
-    public static final String RELEASE_SERVER = "https://open.lofoye.com/api/";
+    public static final String RELEASE_SERVER = "https://api.apiopen.top//";
 
     /**
      * 测试服务器baseUrl
      */
-    public static final String DEBUG_SERVER = "http://open.siigee.com/api/";
+    public static final String DEBUG_SERVER = "https://api.apiopen.top/";
 
     /**
      * 本地服务器baseUrl
      */
-    public static final String LOCAL_SERVER = "http://open.siigee.com/api/";
+    public static final String LOCAL_SERVER = "https://api.apiopen.top/";
 
     /**
      * 获取对应的host

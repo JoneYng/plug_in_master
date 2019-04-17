@@ -9,12 +9,6 @@ package com.yunqi.product.core.base.router;
  */
 public interface RouterPath {
 
-    String MALL_HOME = "/mall/home";
-    String MALL_GOODS = "/order/goods";
-    String MALL_SHOP_CART = "/shop/shopcart";
-    String MALL_SELF = "/self/page";
-
-
     String MAIN = "/main/main";
 
 }

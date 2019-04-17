@@ -8,12 +8,12 @@ package com.yunqi.product.core.base.bean;
 
 public class BaseObj<T> {
 
-    public static final String SUCCESS = "000";
-    public static final String STATE = "0";
+    public static final String SUCCESS = "200";
 
     private String code ;
     private String message ;
     private T data;
+    private T result;
 
     public void setCode(String code) {
         this.code = code;
@@ -37,5 +37,13 @@ public class BaseObj<T> {
 
     public void setData(T data) {
         this.data = data;
+    }
+
+    public T getResult() {
+        return result;
+    }
+
+    public void setResult(T result) {
+        this.result = result;
     }
 }
