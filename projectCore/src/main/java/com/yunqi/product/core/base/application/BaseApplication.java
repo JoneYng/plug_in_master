@@ -6,11 +6,8 @@ import android.os.Handler;
 import android.os.Looper;
 import android.util.Log;
 import android.widget.Toast;
+
 import com.facebook.stetho.Stetho;
-import com.yunqi.product.core.BuildConfig;
-import com.yunqi.product.core.base.CoreApplication;
-import com.yunqi.product.core.util.AppUtils;
-import com.yunqi.product.router.RouterConfig;
 import com.scwang.smartrefresh.layout.SmartRefreshLayout;
 import com.scwang.smartrefresh.layout.api.DefaultRefreshFooterCreator;
 import com.scwang.smartrefresh.layout.api.DefaultRefreshHeaderCreator;
@@ -22,6 +19,13 @@ import com.scwang.smartrefresh.layout.header.ClassicsHeader;
 import com.tencent.bugly.crashreport.CrashReport;
 import com.wanjian.cockroach.Cockroach;
 import com.wanjian.cockroach.ExceptionHandler;
+import com.yunqi.product.core.BuildConfig;
+import com.yunqi.product.core.base.CoreApplication;
+import com.yunqi.product.core.util.AppUtils;
+import com.yunqi.product.router.RouterConfig;
+
+import me.jessyan.autosize.AutoSizeConfig;
+import me.jessyan.autosize.unit.Subunits;
 
 /**
  * @Created by TOME .
@@ -74,7 +78,7 @@ public class BaseApplication extends CoreApplication {
     public void onCreate() {
         super.onCreate();
         //arouter路由初始化
-        RouterConfig.init(this, !BuildConfig.DEBUG);
+        RouterConfig.init(this, BuildConfig.DEBUG);
 
         //bugly初始化
         initBugly();
@@ -82,7 +86,9 @@ public class BaseApplication extends CoreApplication {
         install();
         //Stetho调试工具初始化
         Stetho.initializeWithDefaults(this);
-
+        //今日头条屏幕适配方案
+        AutoSizeConfig.getInstance().getUnitsManager()
+                .setSupportDP(false).setSupportSubunits(Subunits.MM);
     }
 
 

@@ -2,8 +2,10 @@ package com.yunqi.product.core.api;
 
 import com.yunqi.product.core.base.bean.BaseObj;
 import com.yunqi.product.core.bean.home.TestRankingBean;
-import io.reactivex.Observable;
+
 import java.util.Map;
+
+import io.reactivex.Observable;
 import retrofit2.http.FieldMap;
 import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.POST;
@@ -14,10 +16,6 @@ import retrofit2.http.POST;
  * @describe ${API}
  */
 public interface ApiService {
-
-    //@POST("/api/upload/upload")
-    //Observable<BaseEntity<UploadResultBean>> upload(@Body MultipartBody file);
-
     /**
      * 测试
      * @param map
