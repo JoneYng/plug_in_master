@@ -1,25 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:gravity="center"
     tools:context=".MainActivity">
-
-    <TextView
-        android:id="@+id/tv_main_text_view"
-        android:layout_width="wrap_content"
+    <com.hjq.bar.TitleBar
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="main"
-        android:textColor="@color/colorPrimary"
-        android:textSize="15sp"
-       />
-
-    <Button
-        android:id="@+id/btn_test"
-        android:layout_width="100dp"
-        android:layout_height="40dp"
-        android:text="测试"/>
-</LinearLayout>
+        app:backButton="false"
+        app:title="主页面" />
+    <FrameLayout
+        android:id="@+id/main_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+    <me.majiajie.pagerbottomtabstrip.PageNavigationView
+        android:id="@+id/main_tab"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="60dp"/>
+</RelativeLayout>

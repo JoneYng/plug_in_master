@@ -2,15 +2,15 @@
 <resources>
     <color name="core_color_cc000">#cc000000</color>
     <color name="color_00">#000000</color>
-    <color name="colorPrimary">#F49423</color>
-    <color name="colorPrimaryDark">#F49423</color>
-    <color name="colorAccent">#F49423</color>
+    <color name="colorPrimary">#DE2631</color>
+    <color name="colorPrimaryDark">#DE2631</color>
+    <color name="colorAccent">#DE2631</color>
     <color name="color_66">#666666</color>
     <color name="accent_cta">#FFC107</color>
     <color name="primary_text">#212121</color>
 
-    <color name="mainColor">#F49423</color>
-    <color name="orange_fba">#FBA135</color>
+    <color name="mainColor">#DE2631</color>
+    <color name="orange_fba">#DE2631</color>
     <color name="windowBg">#F8F8F8</color>
     <color name="white">#FFFFFF</color>
     <color name="color66">#666666</color>
@@ -21,7 +21,7 @@
     <color name="colorCC">#CCCCCC</color>
     <color name="colorFA">#FAFAFA</color>
     <color name="translucent">#26000000</color>
-    <color name="account_color_orange_f59">#F59523</color>
+    <color name="account_color_orange_f59">#DE2631</color>
     <color name="colorFEFF">#FEFEFF</color>
     <color name="colorE75">#E75353</color>
 
@@ -31,4 +31,16 @@
     <color name="textColorHighlight">#597bc2</color>
     <color name="textColorHint_cta">#bcbcbc</color>
     <color name="disableTextColor_cta">#999999</color>
+
+    <color name="gray">#BBBBBB</color>
+    <color name="red">#FF0000</color>
+    <color name="blue">#0099FF</color>
+    <color name="black">#000000</color>
+    <color name="orange">#FFA82E</color>
+    <color name="bg">#eeeff3</color>
+    <color name="yellow">#ff8000</color>
+    <color name="light_white">#eeeeee</color>
+    <color name="light_blue">#E1FFFF</color>
+    <color name="light_yellow">#F0E68C</color>
+    <color name="light_green">#7FFF00</color>
 </resources>

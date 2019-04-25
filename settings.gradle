@@ -1,1 +1,1 @@
-include ':app', ':otherLib:alertview', ':baseLib:core', ':baseLib:router', ':otherLib:kprogresshud', ':projectCore', ':otherLib:cockroach-x', ':business:mall', ':main'
+include ':app', ':otherLib:alertview', ':baseLib:core', ':baseLib:router', ':otherLib:kprogresshud', ':projectCore', ':otherLib:cockroach-x', ':main', ':mode_user'

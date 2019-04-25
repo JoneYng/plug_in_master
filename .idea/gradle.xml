@@ -12,9 +12,8 @@
             <option value="$PROJECT_DIR$/baseLib" />
             <option value="$PROJECT_DIR$/baseLib/core" />
             <option value="$PROJECT_DIR$/baseLib/router" />
-            <option value="$PROJECT_DIR$/business" />
-            <option value="$PROJECT_DIR$/business/mall" />
             <option value="$PROJECT_DIR$/main" />
+            <option value="$PROJECT_DIR$/mode_user" />
             <option value="$PROJECT_DIR$/otherLib" />
             <option value="$PROJECT_DIR$/otherLib/alertview" />
             <option value="$PROJECT_DIR$/otherLib/cockroach-x" />

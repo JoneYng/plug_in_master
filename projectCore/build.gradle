@@ -35,6 +35,10 @@ dependencies {
     //kotlin
     api "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$rootProject.kotlin_version"
 
+    api 'me.majiajie:pager-bottom-tab-strip:2.3.0'
+    //通用titlebar
+    api 'com.hjq:titlebar:5.0'
+
     //baseadapter RecyclerView万能适配器
     api "com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.22"
     //图片

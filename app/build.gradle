@@ -109,6 +109,9 @@ dependencies {
         if (!rootProject.ext.main) {
             implementation project(':main')
         }
+        if (!rootProject.ext.user) {
+            implementation project(':mode_user')
+        }
 
     }
 }

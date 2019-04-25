@@ -8,6 +8,8 @@ buildscript {
         isRunAlone = false
         //首页模块
         main = false
+//首页模块
+        user = false
 
         ext.compileSdkVersion = 28
         ext.buildToolsVersion = '28.0.0'
